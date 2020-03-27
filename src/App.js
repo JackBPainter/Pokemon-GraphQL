@@ -5,12 +5,12 @@ import { ApolloProvider } from '@apollo/react-hooks'
 import { PokemonsContainer } from './containers/PokemonsContainer'
 
 const App = () => {
-  const apiClient = new ApolloClient({
+  const client = new ApolloClient({
     uri: 'https://graphql-pokemon.now.sh'
-  })
+  });
 
   return (
-      <ApolloProvider apiClient={apiClient}>
+      <ApolloProvider client={client}>
         <div>
           <PokemonsContainer />
         </div>
