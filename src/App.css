@@ -1,0 +1,44 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: red;
+    margin: 20px 0;
+    padding: 0 20px;
+    line-height: 1;
+    font-family: 'sans serif';
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Pokemon App CSS */
+
+.PokemonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 800px;
+    justify-content: space-between;
+}
+
+.PokemonsContainer p {
+    margin: 0;
+}
+
+.PokemonsContainer .pokemon {
+    width: 49%;
+    overflow: hidden;
+    background: #fff;
+    background-clip: border-box;
+    margin-bottom: 20px;
+    border-radius: 0.25rem;
+    border: 1px solid blue;
+}
