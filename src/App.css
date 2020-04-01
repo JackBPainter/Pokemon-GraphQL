@@ -105,3 +105,34 @@ body {
     padding: 7.5px 15px;
     border-radius: 0.5rem;
 }
+
+@media (max-width: 800px) {
+    .PokemonsContainer .pokemon {
+        width: 100%;
+    }
+
+    .PokemonsContainer .pokemon-attacks {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .PokemonsContainer .pokemon-attacks div {
+        min-width: 125px;
+    }
+}
+
+@media (max-width: 450px) {
+    .PokemonsContainer .pokemon-attacks, .PokemonsContainer .pokemon-meta {
+        flex-wrap: wrap;
+    }
+
+    .PokemonsContainer .pokemon-meta span,
+    .PokemonsContainer .pokemon-attacks div,
+    .PokemonsContainer .pokemon {
+        width: 100%;
+    }
+
+    .PokemonsContainer .pokemon-meta span {
+        margin-bottom: 10px;
+    }
+}
